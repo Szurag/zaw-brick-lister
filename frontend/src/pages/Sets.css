@@ -1,0 +1,26 @@
+#sets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 1px);
+    width: calc(33.33% - 1px);
+    box-sizing: border-box;
+    outline: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
